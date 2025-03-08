@@ -1,0 +1,32 @@
+.gallery-slider {
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-slider__wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.gallery-slider__slide {
+  box-sizing: border-box;
+  min-width: 100%;
+  text-align: center;
+}
+
+.gallery-slider__image {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  width: 80%;
+}
+
+
+@media (width >= 768px) {
+  .gallery-slider__slide {
+    min-width: 100%;
+  }
+}

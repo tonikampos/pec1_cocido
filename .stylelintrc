@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "color-hex-length": null,
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "componentName": "^[a-z0-9]+(?:-[a-z0-9]+)*", 
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:__[a-z0-9]+(?:-[a-z0-9]+)*)?(?:--[a-z0-9]+(?:-[a-z0-9]+)*)?$"
+      }
+    },
+"selector-class-pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(__[a-z0-9]+(?:-[a-z0-9]+)*)?(--[a-z0-9]+(?:-[a-z0-9]+)*)?$"},
+   "max-nesting-depth": 3,
+    "scss/at-import-partial-extension": null, 
+    "no-invalid-position-at-import-rule": null,
+
+    "order/properties-alphabetical-order": true
+  
+  }
+

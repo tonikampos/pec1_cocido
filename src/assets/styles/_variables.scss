@@ -1,0 +1,29 @@
+@use "sass:color";
+
+// Fuentes
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, "segoe ui", roboto,
+  "helvetica neue", arial, sans-serif, "apple color emoji", "segoe ui emoji",
+  "segoe ui symbol";
+$font-family-serif: "georgia", "times new roman", serif;
+
+// UOC Colors
+$uoc-corporate: #007800;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+// Media Queries
+$mq-min-width: 420px;
+
+// Tipografías
+$font-primary: "arial", sans-serif;
+$font-secondary: "georgia", serif;
+
+// Colores
+$color-primary: #2c3e50;
+$color-accent: #c0392b;
+$color-bg: #fff;
+$color-text: #333;
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

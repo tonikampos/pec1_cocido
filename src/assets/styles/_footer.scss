@@ -1,0 +1,14 @@
+// _footer.scss
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 1.5rem 0;
+    text-align: center;
+  
+    &__text {
+      color: $color-primary;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  }
+  

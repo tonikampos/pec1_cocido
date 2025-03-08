@@ -1,0 +1,62 @@
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "variables";
+@import "functions";
+@import "../../../node_modules/aos/dist/aos.css";
+@import "home";
+@import "header";
+@import "sections";
+@import "gallery";
+@import "footer";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-primary;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 1rem;
+
+  @media (min-width: $bp-tablet) {
+    max-width: 700px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 1200px;
+  }
+}
+
+
