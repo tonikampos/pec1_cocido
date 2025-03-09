@@ -6,7 +6,7 @@
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web --open",
     "stylelint": "stylelint src/**/*.scss",
-    "parcel:build": "parcel build --target web --no-source-maps --no-cache && cp -r src/assets dist/",
+    "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean stylelint parcel:build",
@@ -17,6 +17,8 @@
       "context": "browser",
       "publicUrl": "./",
       "source": "src/index.html",
+      "distDir": "dist",
+    "includeNodeModules": true,
       "engines": {
         "browsers": "last 2 versions, > 0.5%, not dead"
       }
